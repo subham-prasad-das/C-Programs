@@ -1,6 +1,7 @@
 // ways to calculate the length of the string
 
 #include<stdio.h>
+#include<string.h>
 
 int main(){
 
@@ -17,6 +18,9 @@ int main(){
     printf("The length of the string is: %d", i);
     printf("\n");
 
+    // way 3
+    int len = strlen(str);
+    printf("The length of the string is: %d", len);
 
     return 0;
 }
