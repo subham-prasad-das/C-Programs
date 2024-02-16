@@ -17,13 +17,11 @@ int main(){
     }
 
     int lastDigit = num % 10; // stored the last digit of the number inputted
-    printf("The last digit is %d\n", lastDigit);
-    printf("Value of count is %d\n", count);
+
     while(count > 0){ // added 0s to the last digit of the number inputted
         lastDigit *= 10;
         count--;
     }
-    printf("The last digit is %d\n", lastDigit);
     int rotatedNum = lastDigit + (num/10);
 
     printf("The inputted number i.e. %d when is rotated towards right by one digit became %d", num, rotatedNum);
