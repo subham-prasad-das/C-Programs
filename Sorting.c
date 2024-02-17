@@ -9,7 +9,6 @@ void bubbSort(int arr[], int n){
         }
     }
 }
-
 // greater goes back in subsequent round
 
 void selSort(int arr[], int n){
@@ -24,7 +23,6 @@ void selSort(int arr[], int n){
         arr[i] = temp;
     }
 }
-
 // greater goes back in subsequent round
 
 void insertionSort(int arr[], int n){
@@ -39,7 +37,6 @@ void insertionSort(int arr[], int n){
         arr[j + 1] = temp;
     }
 }
-
 // 1st place sorted 1st
 
 /*
