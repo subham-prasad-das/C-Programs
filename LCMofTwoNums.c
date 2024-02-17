@@ -1,8 +1,5 @@
-// calculate LCM of two numbers
-
 #include<stdio.h>
 #include<stdbool.h>
-#include<stdlib.h>
 
 bool isPrime(int num){
     for(int i = 2; i < num; i++){
