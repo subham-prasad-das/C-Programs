@@ -1,21 +1,33 @@
 #include<stdio.h>
+#include<math.h>
 
-int main(){
-
-    int num; scanf("%d", &num);
-
-    // separating digits and summation of the digits...
-    int sum = 0, temp = num;
+int checkArmstrong(int n){
+    int temp = n;
+    // extract the number of digits in n
+    int dig = 0;
     while(temp){
-        int rem = temp % 10;
-        sum += rem * rem * rem;
+        dig++;
         temp /= 10;
     }
 
-    // checking if Armstrong number or not
-    if(sum == num) printf("The number entered is an Armstrong Number");
-    else printf("The number entered is not an Armstrong Number");
+    // calculating the armstrong
+    int sum = 0;
+    int temp2 = n;
+    for(int i = 0; i < dig; i++){
+        int rem = temp2 % 10;
+        sum += pow(rem, dig);
+        temp2 /= 10;
+    }
 
+    if(sum == n) return 1;
+    else return 0;
+}
+
+int main(){
+
+    int n; scanf("%d", &n);
+    if(checkArmstrong(n)) printf("Yes");
+    else printf("No");
     return 0;
 
 }
